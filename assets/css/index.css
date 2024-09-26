@@ -78,11 +78,14 @@ select {
 }
 
 body {
-  padding: 30px 50px;
+  padding: 30px 30px 10px 30px;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Arial,
     Noto Sans, sans-serif;
   font-size: 2rem;
   color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
@@ -92,8 +95,9 @@ a {
 
 .container {
   max-width: 800px;
-  min-width: 300px;
+  min-width: 800px;
   margin: 0 auto;
+  flex: 1;
 }
 
 h1 {
@@ -168,6 +172,20 @@ nav a {
   text-transform: uppercase;
   font-weight: 500;
   margin-left: 15px;
+}
+
+footer {
+  border-top-style: groove;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  padding-top: 8px;
+  margin: 0;
 }
 
 .profile {
@@ -258,34 +276,6 @@ li::before {
   left: -2rem;
   top: -0.24rem;
   position: absolute;
-}
-
-p.esperanto-text {
-  background-image: url("/assets/images/flags/eo.png");
-  background-repeat: no-repeat;
-  background-position: left 6px;
-  background-size: 25px;
-  padding-left: 37px;
-}
-
-p.english-text {
-  background-image: url("/assets/images/flags/en.png");
-  background-repeat: no-repeat;
-  background-position: left 6px;
-  background-size: 25px;
-  padding-left: 37px;
-}
-
-p.english-text.center,
-p.esperanto-text.center {
-  background-position: left center;
-  background-size: 20px;
-  padding-left: 32px;
-}
-
-p.english-text.closer,
-p.esperanto-text.closer {
-  margin-top: 0;
 }
 
 .green-left-border {
@@ -923,9 +913,9 @@ svg .yt {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   body {
-    padding: 30px 20px;
+    padding: 10px 20px;
   }
 
   header {
@@ -959,6 +949,10 @@ svg .yt {
     padding-bottom: 15px;
     margin-bottom: 20px;
     border-bottom: solid 1px #e0e0e0;
+  }
+
+  .container {
+    min-width: 300px;
   }
 
   .profile {

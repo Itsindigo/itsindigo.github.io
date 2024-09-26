@@ -2,7 +2,7 @@
 <rss version="2.0" 
   xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Matt Bridges</title>
+    <title>On The Daisy Hill</title>
     <description>Observations of a platform engineer</description>
     <link>https://onthedaisyhill.com</link>
     <atom:link href="https://onthedaisyhill.com/feed.xml" rel="self" type="application/rss+xml"/>
